@@ -1033,14 +1033,14 @@ namespace Latios.Kinemation.Systems
 
                 if (hasMultipleMeshes)
                 {
-                    if (maxMeshBoneCount > 682)
+                    if (maxMeshBoneCount > 0)
                         BuildCommandsMultiMeshExpanded(requests, meshes, indexInChunk, skeletonBonesCount);
                     else
                         BuildCommandsMultiMeshBatched(requests, meshes, indexInChunk, skeletonBonesCount);
                 }
                 else
                 {
-                    if (maxMeshBoneCount > 682)
+                    if (maxMeshBoneCount > 0)
                         BuildCommandsSingleMeshExpanded(requests, meshes, indexInChunk, skeletonBonesCount);
                     else
                         BuildCommandsSingleMeshBatched(requests, meshes, indexInChunk, skeletonBonesCount);
